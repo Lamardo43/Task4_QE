@@ -13,20 +13,25 @@
 
 
 
-Адрес для обращения: http://localhost:8081/api/processData
+Адрес для обращения: 
+
+http://localhost:8081/api/processData
 
 
 
 
 команда сборки, используя Maven:
+
 '''mvn spring-boot:run'''
 
 
 
 Пример запроса:
+
 curl -X POST -H "Content-Type: application/json" -d '{"side":2.5}' http://localhost:8081/api/processData
 
 
 
 Ответ при данном запросе:
+
 {"originalSide":2.5,"doubleSide":5.0}
