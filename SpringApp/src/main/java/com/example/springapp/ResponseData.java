@@ -1,13 +1,22 @@
 package com.example.springapp;
 
 public class ResponseData {
-    private float side;
+    private float originalSide;
+    private float doubleSide;
 
-    public float getSide() {
-        return side;
+    public float getOriginalSide() {
+        return originalSide;
     }
 
-    public void setSide(float side) {
-        this.side = side;
+    public void setOriginalSide(float originalSide) {
+        this.originalSide = originalSide;
+    }
+
+    public float getDoubleSide() {
+        return doubleSide;
+    }
+
+    public void setDoubleSide(float doubleSide) {
+        this.doubleSide = doubleSide;
     }
 }
