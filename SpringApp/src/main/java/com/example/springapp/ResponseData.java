@@ -1,22 +1,40 @@
 package com.example.springapp;
 
 public class ResponseData {
-    private float originalSide;
-    private float doubleSide;
+    private String msg_id;
+    private String timestamp;
+    private String method;
+    private String url;
 
-    public float getOriginalSide() {
-        return originalSide;
+    public String getMsg_id() {
+        return msg_id;
     }
 
-    public void setOriginalSide(float originalSide) {
-        this.originalSide = originalSide;
+    public void setMsg_id(String msg_id) {
+        this.msg_id = msg_id;
     }
 
-    public float getDoubleSide() {
-        return doubleSide;
+    public String getTimestamp() {
+        return timestamp;
     }
 
-    public void setDoubleSide(float doubleSide) {
-        this.doubleSide = doubleSide;
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

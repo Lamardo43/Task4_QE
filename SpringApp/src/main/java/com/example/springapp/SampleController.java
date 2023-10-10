@@ -2,21 +2,20 @@ package com.example.springapp;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Instant;
+
 @RestController
-@RequestMapping("/api")
 public class SampleController {
 
-    @PostMapping("/processData")
+    @PostMapping("/post-message")
     public ResponseData processRequest(@RequestBody RequestData requestData) {
-        // Извлечение данных из входящего запроса
-        float inputSide = requestData.getSide();
-
-
         // Создание ответа с данными из входящего запроса
         ResponseData responseData = new ResponseData();
 
-        responseData.setOriginalSide(inputSide);
-        responseData.setDoubleSide(inputSide*2);
+        responseData.setMsg_id(requestData.getMsg_id());
+        responseData.setTimestamp(String.valueOf(Instant.now().getEpochSecond()));
+        responseData.setMethod("POST");
+        responseData.setUrl("/post-message");
 
         return responseData;
     }

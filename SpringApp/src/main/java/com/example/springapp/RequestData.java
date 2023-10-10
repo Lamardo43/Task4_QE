@@ -1,13 +1,13 @@
 package com.example.springapp;
 
 public class RequestData {
-    private float side;
+    private String msg_id;
 
-    public float getSide() {
-        return side;
+    public String getMsg_id() {
+        return msg_id;
     }
 
-    public void setSide(float side) {
-        this.side = side;
+    public void setMsg_id(String msg_id) {
+        this.msg_id = msg_id;
     }
 }
